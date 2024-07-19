@@ -67,7 +67,7 @@ class _MyServicesState extends State<MyServices> {
               });
             },
             child: buildAnimatedContainer(
-              title: 'Digital Marketing',
+              title: 'Website Development',
               asset: AppAssets.analyst,
               hover: isDataAnalyst,
             ),
@@ -120,7 +120,7 @@ class _MyServicesState extends State<MyServices> {
               });
             },
             child: buildAnimatedContainer(
-              title: 'Digital Marketing',
+              title: 'Website Development',
               asset: AppAssets.analyst,
               hover: isDataAnalyst,
               width: 725.0,
@@ -173,7 +173,7 @@ class _MyServicesState extends State<MyServices> {
                   });
                 },
                 child: buildAnimatedContainer(
-                  title: 'Digital Marketing',
+                  title: 'Website Development',
                   asset: AppAssets.analyst,
                   hover: isDataAnalyst,
                 ),
@@ -250,9 +250,11 @@ class _MyServicesState extends State<MyServices> {
           ),
           Constants.sizedBox(height: 12.0),
           Text(
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-            ' The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,',
-            style: AppTextStyles.normalStyle(fontSize: 14.0),
+              "Creating intuitive and powerful mobile applications"
+                  " Designing eye-catching graphics that enhance your brand's visual appeal."
+                  " Developing responsive and user-friendly websites for a robust online presence.",
+
+              style: AppTextStyles.normalStyle(fontSize: 14.0),
             textAlign: TextAlign.center,
           ),
           Constants.sizedBox(height: 20.0),

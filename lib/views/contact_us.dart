@@ -147,7 +147,7 @@ class ContactUs extends StatelessWidget {
                 child: TextField(
                   cursorColor: AppColors.white,
                   style: AppTextStyles.normalStyle(),
-                  decoration: buildInputDecoration(hintText: 'Email Subject'),
+                  decoration: buildInputDecoration(hintText: 'Address'),
                 ),
               ),
             ),

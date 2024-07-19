@@ -46,7 +46,7 @@ class AboutMe extends StatelessWidget {
     return FadeInRight(
       duration: const Duration(milliseconds: 1200),
       child: Image.asset(
-        AppAssets.profile2,
+        AppAssets.profile11,
         height: 450,
         width: 400,
       ),
@@ -86,14 +86,15 @@ class AboutMe extends StatelessWidget {
         FadeInLeft(
           duration: const Duration(milliseconds: 1600),
           child: Text(
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
-            ' The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,'
-            ' as opposed to using \'Content here, content here\', making it look like readable English.'
-            ' Many desktop publishing packages and web page editors now use Lorem Ipsum as their default'
-            ' model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.'
-            ' Various versions have evolved over the years, sometimes by accident, sometimes on purpose'
-            ' (injected humour and the like).',
-            style: AppTextStyles.normalStyle(),
+    "Hi, I'm Aayush Khadka! I’m a passionate Computer Science student from Gatthaghar, Bhaktapur, with a love for all things tech."
+    " I specialize in Flutter development and have worked on a variety of projects, from creating sleek mobile UIs to developing robust backend systems."
+    " My journey has taken me through building user-friendly apps, designing engaging websites, and crafting unique graphic designs for social media."
+    " When I’m not coding, I enjoy learning new technologies and working on creative projects that push the boundaries of what’s possible."
+    " I thrive in collaborative environments and love bringing innovative ideas to life with a team."
+    " Feel free to check out my projects on GitHub or get in touch if you’d like to collaborate on something exciting."
+    " Let’s create something amazing together!",
+
+    style: AppTextStyles.normalStyle(),
           ),
         ),
         Constants.sizedBox(height: 15.0),

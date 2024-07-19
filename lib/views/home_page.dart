@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
         FadeInRight(
           duration: const Duration(milliseconds: 1400),
           child: Text(
-            'Mukhtar Ali Khan',
+            'Aayush khadka',
             style: AppTextStyles.headingStyles(),
           ),
         ),
@@ -95,10 +95,10 @@ class _HomePageState extends State<HomePage> {
                     textStyle:
                         AppTextStyles.montserratStyle(color: Colors.lightBlue),
                   ),
-                  TyperAnimatedText('Freelancer',
+                  TyperAnimatedText('App Enthusiast',
                       textStyle: AppTextStyles.montserratStyle(
                           color: Colors.lightBlue)),
-                  TyperAnimatedText('YouTuber',
+                  TyperAnimatedText('Animal Lover',
                       textStyle: AppTextStyles.montserratStyle(
                           color: Colors.lightBlue))
                 ],
@@ -114,9 +114,9 @@ class _HomePageState extends State<HomePage> {
           duration: const Duration(milliseconds: 1600),
           child: Expanded(
             child: Text(
-              'In publishing and graphic design, Lorem ipsum is a placeholder '
-              'text commonly used to demonstrate the visual form of a document'
-              ' or a typeface without relying on meaningful content.',
+              'My portfolio showcases my journey in software development and design '
+              'featuring projects in Flutter, UI/UX design, and more.'
+              ' Explore my work and expertise in creating engaging digital experiences',
               style: AppTextStyles.normalStyle(),
             ),
           ),
