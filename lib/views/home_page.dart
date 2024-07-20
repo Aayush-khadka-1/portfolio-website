@@ -1,5 +1,3 @@
-import 'package:animate_do/animate_do.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/globals/app_assets.dart';
 import 'package:my_portfolio/globals/app_buttons.dart';
@@ -8,6 +6,9 @@ import 'package:my_portfolio/globals/app_text_styles.dart';
 import 'package:my_portfolio/globals/constants.dart';
 import 'package:my_portfolio/helper%20class/helper_class.dart';
 import 'package:my_portfolio/widgets/profile_animation.dart';
+import 'package:animate_do/animate_do.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'pdf_viewer_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -93,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                   TyperAnimatedText(
                     'Flutter Developer',
                     textStyle:
-                        AppTextStyles.montserratStyle(color: Colors.lightBlue),
+                    AppTextStyles.montserratStyle(color: Colors.lightBlue),
                   ),
                   TyperAnimatedText('App Enthusiast',
                       textStyle: AppTextStyles.montserratStyle(
@@ -115,8 +116,8 @@ class _HomePageState extends State<HomePage> {
           child: Expanded(
             child: Text(
               'My portfolio showcases my journey in software development and design '
-              'featuring projects in Flutter, UI/UX design, and more.'
-              ' Explore my work and expertise in creating engaging digital experiences',
+                  'featuring projects in Flutter, UI/UX design, and more.'
+                  ' Explore my work and expertise in creating engaging digital experiences',
               style: AppTextStyles.normalStyle(),
             ),
           ),
@@ -159,7 +160,16 @@ class _HomePageState extends State<HomePage> {
         FadeInUp(
           duration: const Duration(milliseconds: 1800),
           child: AppButtons.buildMaterialButton(
-              onTap: () {}, buttonName: 'Download CV'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PdfViewerScreen(path:'assets/cv.pdf'),
+                ),
+              );
+            },
+            buttonName: 'Download CV',
+          ),
         ),
       ],
     );
