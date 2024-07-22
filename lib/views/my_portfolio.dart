@@ -17,12 +17,12 @@ class _MyPortfolioState extends State<MyPortfolio> {
   final onH0verEffect = Matrix4.identity()..scale(1.0);
 
   List images = <String>[
-    AppAssets.work1,
-    AppAssets.work2,
-    AppAssets.work1,
-    AppAssets.work2,
-    AppAssets.work1,
-    AppAssets.work2,
+    AppAssets.project1,
+    AppAssets.project2,
+    AppAssets.project3,
+    AppAssets.project4,
+    AppAssets.project5,
+    AppAssets.project6,
   ];
 
   var hoveredIndex;
@@ -125,7 +125,7 @@ class _MyPortfolioState extends State<MyPortfolio> {
                         ),
                         Constants.sizedBox(height: 15.0),
                         Text(
-                          'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+                          '',
                           style:
                               AppTextStyles.normalStyle(color: Colors.black87),
                           textAlign: TextAlign.center,
